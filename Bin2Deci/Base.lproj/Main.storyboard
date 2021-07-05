@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs9-RM-AOA">
-                                <rect key="frame" x="170" y="633.5" width="74" height="40"/>
+                                <rect key="frame" x="170" y="622" width="74" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0iq-f5-JXl"/>
                                 </constraints>
@@ -56,9 +56,9 @@
                             <constraint firstItem="Zs9-RM-AOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yl-4d-8Ks"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rn6-8p-SfN" secondAttribute="trailing" constant="80" id="6e8-AF-vBK"/>
                             <constraint firstItem="bDr-sk-lKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="9nE-Vf-Izs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zs9-RM-AOA" secondAttribute="bottom" constant="200" id="FM4-CD-UUh"/>
                             <constraint firstItem="Rn6-8p-SfN" firstAttribute="top" secondItem="bDr-sk-lKp" secondAttribute="bottom" constant="120" id="JHr-F9-NN2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDr-sk-lKp" secondAttribute="trailing" constant="144" id="Kuk-it-Nrx"/>
-                            <constraint firstItem="Zs9-RM-AOA" firstAttribute="top" secondItem="GNU-EL-Uc6" secondAttribute="bottom" constant="220" id="Kyy-c2-iOk"/>
                             <constraint firstItem="bDr-sk-lKp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MMa-HK-VJC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zs9-RM-AOA" secondAttribute="trailing" constant="170" id="bYw-oT-cHl"/>
                             <constraint firstItem="GNU-EL-Uc6" firstAttribute="top" secondItem="Rn6-8p-SfN" secondAttribute="bottom" constant="30" id="ff6-bO-azm"/>

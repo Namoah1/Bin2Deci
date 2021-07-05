@@ -13,26 +13,7 @@
 		6274D1F42692422A00889216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6274D1F22692422A00889216 /* Main.storyboard */; };
 		6274D1F62692422E00889216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6274D1F52692422E00889216 /* Assets.xcassets */; };
 		6274D1F92692422E00889216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6274D1F72692422E00889216 /* LaunchScreen.storyboard */; };
-		6274D2042692422F00889216 /* bin2decTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274D2032692422F00889216 /* bin2decTests.swift */; };
-		6274D20F2692422F00889216 /* bin2decUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274D20E2692422F00889216 /* bin2decUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6274D2002692422F00889216 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6274D1E12692422A00889216 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6274D1E82692422A00889216;
-			remoteInfo = bin2dec;
-		};
-		6274D20B2692422F00889216 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6274D1E12692422A00889216 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6274D1E82692422A00889216;
-			remoteInfo = bin2dec;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6274D1E92692422A00889216 /* bin2dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bin2dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,30 +24,10 @@
 		6274D1F52692422E00889216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6274D1F82692422E00889216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6274D1FA2692422E00889216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6274D1FF2692422F00889216 /* bin2decTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bin2decTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6274D2032692422F00889216 /* bin2decTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bin2decTests.swift; sourceTree = "<group>"; };
-		6274D2052692422F00889216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6274D20A2692422F00889216 /* bin2decUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bin2decUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6274D20E2692422F00889216 /* bin2decUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bin2decUITests.swift; sourceTree = "<group>"; };
-		6274D2102692422F00889216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6274D1E62692422A00889216 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6274D1FC2692422F00889216 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6274D2072692422F00889216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,9 +40,7 @@
 		6274D1E02692422A00889216 = {
 			isa = PBXGroup;
 			children = (
-				6274D1EB2692422A00889216 /* bin2dec */,
-				6274D2022692422F00889216 /* bin2decTests */,
-				6274D20D2692422F00889216 /* bin2decUITests */,
+				6274D1EB2692422A00889216 /* Bin2Deci */,
 				6274D1EA2692422A00889216 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,13 +49,11 @@
 			isa = PBXGroup;
 			children = (
 				6274D1E92692422A00889216 /* bin2dec.app */,
-				6274D1FF2692422F00889216 /* bin2decTests.xctest */,
-				6274D20A2692422F00889216 /* bin2decUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6274D1EB2692422A00889216 /* bin2dec */ = {
+		6274D1EB2692422A00889216 /* Bin2Deci */ = {
 			isa = PBXGroup;
 			children = (
 				6274D1EC2692422A00889216 /* AppDelegate.swift */,
@@ -107,25 +64,7 @@
 				6274D1F72692422E00889216 /* LaunchScreen.storyboard */,
 				6274D1FA2692422E00889216 /* Info.plist */,
 			);
-			path = bin2dec;
-			sourceTree = "<group>";
-		};
-		6274D2022692422F00889216 /* bin2decTests */ = {
-			isa = PBXGroup;
-			children = (
-				6274D2032692422F00889216 /* bin2decTests.swift */,
-				6274D2052692422F00889216 /* Info.plist */,
-			);
-			path = bin2decTests;
-			sourceTree = "<group>";
-		};
-		6274D20D2692422F00889216 /* bin2decUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6274D20E2692422F00889216 /* bin2decUITests.swift */,
-				6274D2102692422F00889216 /* Info.plist */,
-			);
-			path = bin2decUITests;
+			path = Bin2Deci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,42 +87,6 @@
 			productReference = 6274D1E92692422A00889216 /* bin2dec.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6274D1FE2692422F00889216 /* bin2decTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6274D2162692422F00889216 /* Build configuration list for PBXNativeTarget "bin2decTests" */;
-			buildPhases = (
-				6274D1FB2692422F00889216 /* Sources */,
-				6274D1FC2692422F00889216 /* Frameworks */,
-				6274D1FD2692422F00889216 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6274D2012692422F00889216 /* PBXTargetDependency */,
-			);
-			name = bin2decTests;
-			productName = bin2decTests;
-			productReference = 6274D1FF2692422F00889216 /* bin2decTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6274D2092692422F00889216 /* bin2decUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6274D2192692422F00889216 /* Build configuration list for PBXNativeTarget "bin2decUITests" */;
-			buildPhases = (
-				6274D2062692422F00889216 /* Sources */,
-				6274D2072692422F00889216 /* Frameworks */,
-				6274D2082692422F00889216 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6274D20C2692422F00889216 /* PBXTargetDependency */,
-			);
-			name = bin2decUITests;
-			productName = bin2decUITests;
-			productReference = 6274D20A2692422F00889216 /* bin2decUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,17 +99,9 @@
 					6274D1E82692422A00889216 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					6274D1FE2692422F00889216 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 6274D1E82692422A00889216;
-					};
-					6274D2092692422F00889216 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 6274D1E82692422A00889216;
-					};
 				};
 			};
-			buildConfigurationList = 6274D1E42692422A00889216 /* Build configuration list for PBXProject "bin2dec" */;
+			buildConfigurationList = 6274D1E42692422A00889216 /* Build configuration list for PBXProject "Bin2Deci" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,8 +115,6 @@
 			projectRoot = "";
 			targets = (
 				6274D1E82692422A00889216 /* bin2dec */,
-				6274D1FE2692422F00889216 /* bin2decTests */,
-				6274D2092692422F00889216 /* bin2decUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +127,6 @@
 				6274D1F92692422E00889216 /* LaunchScreen.storyboard in Resources */,
 				6274D1F62692422E00889216 /* Assets.xcassets in Resources */,
 				6274D1F42692422A00889216 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6274D1FD2692422F00889216 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6274D2082692422F00889216 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,36 +143,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6274D1FB2692422F00889216 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6274D2042692422F00889216 /* bin2decTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6274D2062692422F00889216 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6274D20F2692422F00889216 /* bin2decUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6274D2012692422F00889216 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6274D1E82692422A00889216 /* bin2dec */;
-			targetProxy = 6274D2002692422F00889216 /* PBXContainerItemProxy */;
-		};
-		6274D20C2692422F00889216 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6274D1E82692422A00889216 /* bin2dec */;
-			targetProxy = 6274D20B2692422F00889216 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6274D1F22692422A00889216 /* Main.storyboard */ = {
@@ -438,12 +288,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2dec/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bin2Deci/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2dec;
+				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.Bin2Deci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,106 +307,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2dec/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bin2Deci/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2dec;
+				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.Bin2Deci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		6274D2172692422F00889216 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2decTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2decTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bin2dec.app/bin2dec";
-			};
-			name = Debug;
-		};
-		6274D2182692422F00889216 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2decTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2decTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bin2dec.app/bin2dec";
-			};
-			name = Release;
-		};
-		6274D21A2692422F00889216 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2decUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2decUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bin2dec;
-			};
-			name = Debug;
-		};
-		6274D21B2692422F00889216 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5QMR69A75;
-				INFOPLIST_FILE = bin2decUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = od.amoah.bin2decUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bin2dec;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6274D1E42692422A00889216 /* Build configuration list for PBXProject "bin2dec" */ = {
+		6274D1E42692422A00889216 /* Build configuration list for PBXProject "Bin2Deci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6274D2112692422F00889216 /* Debug */,
@@ -570,24 +336,6 @@
 			buildConfigurations = (
 				6274D2142692422F00889216 /* Debug */,
 				6274D2152692422F00889216 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6274D2162692422F00889216 /* Build configuration list for PBXNativeTarget "bin2decTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6274D2172692422F00889216 /* Debug */,
-				6274D2182692422F00889216 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6274D2192692422F00889216 /* Build configuration list for PBXNativeTarget "bin2decUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6274D21A2692422F00889216 /* Debug */,
-				6274D21B2692422F00889216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
