@@ -11,6 +11,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var convertedLabel: UILabel!
+    @IBOutlet weak var binDecSegmentedControl: UISegmentedControl!
     
     var result = 0
     let allowedInput = CharacterSet(charactersIn:"01").inverted
