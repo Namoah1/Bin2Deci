@@ -20,21 +20,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         inputTextField.delegate = self
         
     }
-
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//
-//        let components = string.components(separatedBy: allowedCharacters)
-//        let filtered = components.joined(separator: "")
-//
-//        if string == filtered {
-//
-//            return true
-//
-//        } else {
-//
-//            return false
-//        }
-    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
         replacementString string: String) -> Bool {
@@ -68,7 +53,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         result = 0
         inputString = ""
         
-        
+    }
+    
+    
+
 //Using arrays
 //        var inputArray = Array(inputTextField.text ?? "")
 //        for (i, num) in inputArray.enumerated(){
@@ -79,12 +67,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //        convertedLabel.text = "Decimal Value: " + String(result)
 //        result = 0
 //        inputArray.removeAll()
-        
-    }
-    
-    
-
-
 
 }
 
