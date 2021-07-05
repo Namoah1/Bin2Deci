@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bin2dec" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bin2Dec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-sk-lKp">
+                                <rect key="frame" x="144" y="144" width="126" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Binary Digits Here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rn6-8p-SfN">
+                                <rect key="frame" x="80" y="306" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mLs-TO-LpA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decimal Value: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNU-EL-Uc6">
+                                <rect key="frame" x="80" y="386" width="254" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs9-RM-AOA">
+                                <rect key="frame" x="170" y="633.5" width="74" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0iq-f5-JXl"/>
+                                </constraints>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz1-Kg-IbN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zs9-RM-AOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yl-4d-8Ks"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rn6-8p-SfN" secondAttribute="trailing" constant="80" id="6e8-AF-vBK"/>
+                            <constraint firstItem="bDr-sk-lKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="9nE-Vf-Izs"/>
+                            <constraint firstItem="Rn6-8p-SfN" firstAttribute="top" secondItem="bDr-sk-lKp" secondAttribute="bottom" constant="120" id="JHr-F9-NN2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDr-sk-lKp" secondAttribute="trailing" constant="144" id="Kuk-it-Nrx"/>
+                            <constraint firstItem="Zs9-RM-AOA" firstAttribute="top" secondItem="GNU-EL-Uc6" secondAttribute="bottom" constant="220" id="Kyy-c2-iOk"/>
+                            <constraint firstItem="bDr-sk-lKp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MMa-HK-VJC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zs9-RM-AOA" secondAttribute="trailing" constant="170" id="bYw-oT-cHl"/>
+                            <constraint firstItem="GNU-EL-Uc6" firstAttribute="top" secondItem="Rn6-8p-SfN" secondAttribute="bottom" constant="30" id="ff6-bO-azm"/>
+                            <constraint firstItem="Zs9-RM-AOA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="jHc-eC-Crl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GNU-EL-Uc6" secondAttribute="trailing" constant="80" id="mBZ-8t-5aq"/>
+                            <constraint firstItem="GNU-EL-Uc6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ozU-KU-QlB"/>
+                            <constraint firstItem="bDr-sk-lKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnM-mQ-j52"/>
+                            <constraint firstItem="GNU-EL-Uc6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfC-5M-pBP"/>
+                            <constraint firstItem="Rn6-8p-SfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="y5Z-ri-UdU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertedLabel" destination="GNU-EL-Uc6" id="oxM-65-yVN"/>
+                        <outlet property="inputTextField" destination="Rn6-8p-SfN" id="gQ5-gS-5l1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
