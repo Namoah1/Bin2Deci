@@ -28,9 +28,9 @@ In Version 2:
 ## Bonus features
 
 -   [x] User can enter a variable number of binary digits
+-  
 
 ## Day 2
-
 - Added segmented control element to allow 
 
 ## User Stories
