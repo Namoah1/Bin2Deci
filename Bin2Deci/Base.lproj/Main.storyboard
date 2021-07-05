@@ -56,6 +56,9 @@
                                     <segment title="Binary"/>
                                     <segment title="Decimal"/>
                                 </segments>
+                                <connections>
+                                    <action selector="binDecSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="PFy-Ea-q0K"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,7 +85,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="binDecSegmentedControl" destination="poI-6i-OZ6" id="Rg5-c0-Fc4"/>
+                        <outlet property="binDecToggleSegmentedControl" destination="poI-6i-OZ6" id="XiF-I9-Tzx"/>
                         <outlet property="convertedLabel" destination="GNU-EL-Uc6" id="oxM-65-yVN"/>
                         <outlet property="inputTextField" destination="Rn6-8p-SfN" id="gQ5-gS-5l1"/>
                     </connections>
