@@ -28,38 +28,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
         replacementString string: String) -> Bool {
         if binDecToggleSegmentedControl.selectedSegmentIndex == 0 {
-            var filteredBool = false
+
             let currentText = textField.text ?? ""
             let components = string.components(separatedBy: allowedInputBin)
             let filtered = components.joined(separator: "")
             let newString = (currentText as NSString).replacingCharacters(in: range, with: string)
-            
-            if string == filtered{
-                filteredBool = true
-            }else{
-                filteredBool = false
-            }
 
-            return filteredBool && newString.count <= 8
+            return (string == filtered) && newString.count <= 8
+            
         }else{
-            var filteredBool = false
+
             let currentText = textField.text ?? ""
             let components = string.components(separatedBy: allowedInputDec)
             let filtered = components.joined(separator: "")
             let newString = (currentText as NSString).replacingCharacters(in: range, with: string)
             
-            if string == filtered{
-                filteredBool = true
-            }else{
-                filteredBool = false
-            }
-
-            return filteredBool && newString.count <= 10
+            return (string == filtered) && newString.count <= 8
         }
             
 
     }
-    
     
     
     @IBAction func convertButton(_ sender: Any) {
@@ -90,9 +78,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
         }
         
-
-        
-    
     
     @IBAction func binDecSegmentedControl(_ sender: Any) {
         if binDecToggleSegmentedControl.selectedSegmentIndex == 1{
