@@ -1,7 +1,8 @@
 # Bin2Deci
 
-**#100DaysOfSwift:** Day 1
+**#100DaysOfSwift:** [Day 1, Day 2]
 
+## Day 1
 Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's
 and 1's, in any sequence and then displays its decimal equivalent.
 
@@ -14,11 +15,9 @@ This programme follows these constraints in Version 1:
 
 In Version 2:
 
--   Arrays may not be used to contain the binary digits entered by the user
+-   Arrays not be used to contain the binary digits entered by the user.
 -   Determining the decimal equivalent of a particular binary digit in the
-    sequence must be calculated using a single mathematical function, for
-    example the natural logarithm. It's up to you to figure out which function
-    to use.
+    sequence is calculated using a single mathematical function.
 
 ## User Stories
 
@@ -29,6 +28,16 @@ In Version 2:
 ## Bonus features
 
 -   [x] User can enter a variable number of binary digits
+
+## Day 2
+
+- Added segmented control element to allow 
+
+## User Stories
+
+-   [x] User can toggle between changing from binary to decimal or from decimal to binary.
+-   [x] User can receives the right conversion at output.
+-   [x] User can input any integer in the text field.
 
 
 App Idea: https://github.com/florinpop17/app-ideas
