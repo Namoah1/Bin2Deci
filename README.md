@@ -30,3 +30,5 @@ In Version 2:
 
 -   [x] User can enter a variable number of binary digits
 
+
+App Idea: https://github.com/florinpop17/app-ideas
