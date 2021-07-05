@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var binDecToggleSegmentedControl: UISegmentedControl!
     
     var result = 0
+    var resultStr = ""
     let allowedInputBin = CharacterSet(charactersIn:"01").inverted
     let allowedInputDec = CharacterSet(charactersIn:"012345678").inverted
     
@@ -75,27 +76,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
             inputString = ""
         }else{
             var inputString = inputTextField.text ?? ""
-            for (i, num) in inputString.enumerated(){
-                let intAtPosition = Int(String(num)) ?? 0
-                result += (intAtPosition * 10)
+            var decNum = Int(inputString) ?? 0
+            while decNum > 0 {
+                resultStr += String(decNum % 2)
+                decNum = decNum / 2
             }
             
-            convertedLabel.text = "Binary Value: " + String(result)
-            result = 0
+            resultStr = String(resultStr.reversed())
+            convertedLabel.text = "Binary Value: " + resultStr
+            resultStr = ""
             inputString = ""
+            }
+            
         }
         
 
         
-    }
+    
     
     @IBAction func binDecSegmentedControl(_ sender: Any) {
         if binDecToggleSegmentedControl.selectedSegmentIndex == 1{
             convertedLabel.text = "Binary: 0"
             inputTextField.placeholder = "Enter Decimal Digits Here"
+            inputTextField.text = ""
         }else{
             convertedLabel.text = "Decimal: 0"
             inputTextField.placeholder = "Enter Binary Digits Here"
+            inputTextField.text = ""
         }
     }
     
