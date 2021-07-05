@@ -31,9 +31,12 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decimal Value: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNU-EL-Uc6">
-                                <rect key="frame" x="80" y="386" width="254" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decimal Value: 0" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNU-EL-Uc6">
+                                <rect key="frame" x="80" y="386" width="254" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="eEc-EP-d0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -64,8 +67,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="poI-6i-OZ6" firstAttribute="top" secondItem="GNU-EL-Uc6" secondAttribute="bottom" constant="67" id="2lQ-td-kqf"/>
                             <constraint firstItem="Zs9-RM-AOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yl-4d-8Ks"/>
-                            <constraint firstItem="poI-6i-OZ6" firstAttribute="top" secondItem="GNU-EL-Uc6" secondAttribute="bottom" constant="74.5" id="6AK-AB-uga"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rn6-8p-SfN" secondAttribute="trailing" constant="80" id="6e8-AF-vBK"/>
                             <constraint firstItem="bDr-sk-lKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="9nE-Vf-Izs"/>
                             <constraint firstItem="Zs9-RM-AOA" firstAttribute="top" secondItem="poI-6i-OZ6" secondAttribute="bottom" constant="103" id="BCo-XE-m29"/>

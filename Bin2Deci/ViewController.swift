@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var result = 0
     var resultStr = ""
     let allowedInputBin = CharacterSet(charactersIn:"01").inverted
-    let allowedInputDec = CharacterSet(charactersIn:"012345678").inverted
+    let allowedInputDec = CharacterSet(charactersIn:"0123456789").inverted
     
     override func viewDidLoad() {
         super.viewDidLoad()
