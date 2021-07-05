@@ -31,6 +31,11 @@ In Version 2:
 -  
 
 ## Day 2
+Bin2Dec now allows the user to enter strings of up to 8 binary digits, 0's
+and 1's, in any sequence and then displays its decimal equivalent. It also allows
+the reverse; allows the user to enter strings of up to 8 decimal digits in any sequence 
+and then displays its binary equivalent
+
 - Added segmented control element to allow 
 
 ## User Stories
