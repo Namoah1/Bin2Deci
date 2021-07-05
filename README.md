@@ -28,5 +28,5 @@ In Version 2:
 
 ## Bonus features
 
--   [ ] User can enter a variable number of binary digits
+-   [+] User can enter a variable number of binary digits
 
