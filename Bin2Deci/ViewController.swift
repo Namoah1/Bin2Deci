@@ -13,20 +13,49 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var convertedLabel: UILabel!
     
     var result = 0
+    let allowedInput = CharacterSet(charactersIn:"01").inverted
     
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextField.delegate = self
         
     }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 8
-        let currString: NSString = (textField.text ?? "") as NSString
-        let newString: NSString = currString.replacingCharacters(in: range, with: string) as NSString
 
-        return newString.length <= maxLength
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+//        let components = string.components(separatedBy: allowedCharacters)
+//        let filtered = components.joined(separator: "")
+//
+//        if string == filtered {
+//
+//            return true
+//
+//        } else {
+//
+//            return false
+//        }
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+        replacementString string: String) -> Bool {
+        
+        var filteredBool = false
+        let currentText = textField.text ?? ""
+        let components = string.components(separatedBy: allowedInput)
+        let filtered = components.joined(separator: "")
+        let newString = (currentText as NSString).replacingCharacters(in: range, with: string)
+        
+        if string == filtered{
+            filteredBool = true
+        }else{
+            filteredBool = false
+        }
+
+        return filteredBool && newString.count <= 8
+
     }
+    
+    
     
     @IBAction func convertButton(_ sender: Any) {
         var inputString = inputTextField.text ?? ""
