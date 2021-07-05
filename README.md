@@ -1,4 +1,4 @@
-# Bin2Dec
+# Bin2Deci
 
 **#100DaysOfSwift:** Day 1
 
