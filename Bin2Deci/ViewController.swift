@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var inputString = inputTextField.text ?? ""
         for (i, num) in inputString.enumerated(){
             let intAtPosition = Int(String(num)) ?? 0
-            result = result + (intAtPosition * Int(pow(2, Double((inputString.count - 1) - i))))
+            result += (intAtPosition * Int(pow(2, Double((inputString.count - 1) - i))))
         }
         
         convertedLabel.text = "Decimal Value: " + String(result)
